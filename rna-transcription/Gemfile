@@ -1,0 +1,9 @@
+source 'https://rubygems.org'
+
+group :minitest do
+  gem 'minitest-reporters', '~> 1.2'
+end
+
+group :rspec do
+  gem 'rspec', '~> 3.7'
+end
