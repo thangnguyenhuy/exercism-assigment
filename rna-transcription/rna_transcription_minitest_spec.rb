@@ -1,5 +1,14 @@
+require 'minitest/reporters'
 require 'minitest/autorun'
 require_relative 'rna_transcription'
+
+require 'bundler/setup'
+Bundler.require(:default)
+
+Minitest::Reporters.use! [
+  Minitest::Reporters::SpecReporter.new,
+  Minitest::Reporters::HtmlReporter.new
+]
 
 describe "RnaTranscription" do
   describe "One-nucleotide" do
